@@ -21,14 +21,20 @@ store.dispatch(addExpense({
 
 store.dispatch(addExpense({
     description: 'Gas bill',
-    amount: 100,
+    amount: 1000,
     note: 'This is a sample of a gas bill',
     createdAt: 124680,
 }));
 
-store.dispatch(setTextFilter('wa'));
+store.dispatch(addExpense({
+    description: 'Rent',
+    amount: 109500,
+}));
 
-/* setTimeout(()=>{
+/*
+ to test the store manually
+ store.dispatch(setTextFilter('wa'));
+ setTimeout(()=>{
     store.dispatch(setTextFilter('gas'));
 }, 3000); */
 
@@ -41,7 +47,7 @@ console.log(visibleExpenses);
  * 
  */
 const jsx = (
-    <Provider store= { store }> 
+    <Provider store = { store }> 
         <AppRouter />
     </Provider>
 );

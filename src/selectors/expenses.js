@@ -1,3 +1,7 @@
+/**
+ * Querying the data to the store
+ */
+
 // Get Visible expenses
 export default (expenses, {text, sortBy, startDate, endDate }) => {
     return expenses

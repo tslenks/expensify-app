@@ -12,6 +12,7 @@ const ExpenseList = (props) => (
     </div>
 );
 
+// associated the updated store with the component
 const mapStateToProps = (state)=> ({
     expenses: selectExpenses(state.expenses, state.filters) // because here we need the filter data and not all the data
 });

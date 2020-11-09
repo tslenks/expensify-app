@@ -1,5 +1,5 @@
 /**
- * Higher order components :: A component that renders another components
+ * Higher order components (HOC) :: A component that renders another components
  * so it wrappes components and his advantages are ::
  *  - reusable
  *  - render highjacking
